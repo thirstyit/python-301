@@ -1,3 +1,6 @@
+# Demonstrate how you can log in to the Reddit API to receive content that
+# requires authentication, using only `requests` and your credentials.
+
 import requests
 from secrets import REDDIT_CLIENT_ID, REDDIT_SECRET, REDDIT_USER_AGENT
 from secrets import REDDIT_USERNAME, REDDIT_PASSWORD
