@@ -1,3 +1,4 @@
+# Feel free to use your own implementation of the web scraper instead!
 import requests
 from bs4 import BeautifulSoup
 
