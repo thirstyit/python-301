@@ -2,5 +2,5 @@
 # in `mymath.py`
 #
 # 1. Check for correct results by providing example input.
-# 2. Check that a `ZeroDivisionError` gets raised correctly.
+# 2. Check that a `CustomZeroDivisionError` gets raised correctly.
 
