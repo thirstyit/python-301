@@ -10,3 +10,27 @@
 # Be creative. Have some fun. :)
 # Using objects you can model anything you want:
 # Animals, paintings, card games, sports teams, trees, people etc...
+
+class Dog:
+    def __init__(self, noise, breed, furColour) -> None:
+        self.noise = noise
+        self.breed = breed
+        self.furColour = furColour
+
+    def __add__(self, other):
+        mix_breed = self.breed + " - " + other.breed
+        return Dog(noise=self.noise, breed=mix_breed, furColour=self.furColour)
+    
+    def __str__(self) -> str:
+        return f"Dog breed {self.breed} has {self.furColour} fur and {self.noise}."
+    
+
+d1 = Dog("barks", "Labrador", "Black")
+d2 = Dog("Growls", "Alsatian", "Brown")
+
+print(d1)
+print(d2)
+
+d3 = d1 + d2
+
+print(d3)
