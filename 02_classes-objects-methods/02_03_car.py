@@ -6,3 +6,25 @@
 #
 # Create at least two different objects of this `Car()` class and demonstrate
 # changing the objects' attributes.
+
+
+class Car:
+    def __init__(self, model, year, max_speed) -> None:
+        self.model = model
+        self.year = year
+        self.max_speed = max_speed
+
+    def increaseMaxSpeed(self):
+        self.max_speed += 5
+
+    def __str__(self):
+        return f"{self.year} {self.model} with a max speed of {self.max_speed}"
+    
+
+my = Car("Holden", 1982, 120)
+
+print(my)
+
+my.increaseMaxSpeed()
+
+print(my)
