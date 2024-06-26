@@ -10,3 +10,17 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
+
+
+class DoctorApp:
+    def __init__(self, name, age, sex):
+        self.name = name
+        self.age = age
+        self.sex = sex
+
+
+da = DoctorApp("sam Ferg", 44, "M")
+da1 = DoctorApp("Alex Ferg", 42, "F")
+
+print(da.name)
+print(da1.name)
