@@ -25,3 +25,17 @@ class Spice(Ingredient):
     def grind(self):
         print(f"You have now {self.amount} of ground {self.name}.")
 
+class Vegetable(Ingredient):
+    """Models vegetables added to food"""
+    def expire(self):
+        print("I'm overriden")
+
+    
+    def boil(self):
+        print(f"Boiled {self.name}")
+
+
+v = Vegetable("Parsnip", 5)
+print(v.expire())
+print(v.boil())
+
