@@ -3,3 +3,11 @@
 #
 # If you run into encoding/decoding errors, you're experiencing something
 # very common. head over to StackOverflow and find a solution!
+
+import requests
+
+URL = 'https://codingnomads.com'
+
+req = requests.get(URL)
+
+print(req.text)
