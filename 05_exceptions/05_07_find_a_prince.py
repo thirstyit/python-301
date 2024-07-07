@@ -3,3 +3,23 @@
 # like you did in the previous exercise.
 # Raise your `PrinceException()` if the first 100 characters of a book
 # contain the string "Prince".
+
+
+import os
+
+
+
+path_name = 'books/'
+for file in os.listdir(path_name):
+
+    try:
+        f_handle = open(path_name + file, 'r')
+        chars = f_handle.read(100)
+        if 'Prince' in chars:
+            print(file)
+            raise PrinceException
+        
+        
+
+    except Exception as PrinceException:
+        print('Prince of Persia')
