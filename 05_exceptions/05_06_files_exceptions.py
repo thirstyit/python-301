@@ -13,3 +13,19 @@
 #    should NEVER terminate with a Traceback.
 #     a) Which exception can you expect to encounter? Why?
 #     b) How do you catch it to avoid the program from terminating with a traceback?
+
+import os
+
+
+
+file_name = 'books/'
+for file in os.listdir(file_name):
+
+    try:
+        f_handle = open(file_name + file, 'r')
+        line = f_handle.readline()
+        print(line[0])
+
+    except Exception as e:
+        print(e)
+    
