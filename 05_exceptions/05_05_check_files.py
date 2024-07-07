@@ -5,3 +5,25 @@
 # only if neither of them applies.
 
 file_name = 'integers.txt'
+
+f_handle = open(file_name, 'r')
+
+total = 0
+
+for line in f_handle.readlines():
+    try:
+        
+        #line = line.strip()
+        x = int(line)
+        
+
+    except IOError:
+        print("Error on entry")
+    except ValueError:
+        print("Value Error")
+    except:
+        print("UnknowN Error")
+        print(x)
+    else:
+        total += x
+print(total)
