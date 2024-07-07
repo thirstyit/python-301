@@ -1,2 +1,4 @@
 secrets.py
 venv
+projects/keys.py
+__pycache__
